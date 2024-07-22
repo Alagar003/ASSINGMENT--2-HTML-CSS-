@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="1.css">
+    
+</head>
+<body>
+    <div class="cover">
+    <div class="form">
+    <h1>User input form</h1><br>
+    
+    <form id="user-form">
+    
+            <label for="first_name">First Name:</label>
+            <input type="text" id="firstname"><br><br>
+            
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="lastname"><br><br>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" class="in"><br><br>
+
+            <label for="Language">Language:</label>
+            <input type="checkbox" id="Language" name="language" value="Tamil">
+            <label for="Language">Tamil</label>
+            <input type="checkbox" id="Language" name="language" value="English">
+            <label for="Language">English</label>
+            <input type="checkbox" id="Language" name="language" value="Hindi">
+            <label for="Language">Hindi</label><br><br>
+
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="Gender" name="Gender" value="Male">Male
+            <input type="radio" id="Gender" name="Gender" value="Female">Female<br><br>
+
+
+                <label for="Education">Education:</label>
+                <select id="Education" name="Education">
+                    <option value="">Please select...</option>
+                    <option value="UG">UG</option>
+                    <option value="PG">PG</option>
+                    <option value="PHD">PHD</option>
+                </select><br><br>
+           
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+            
+                
+        <input type="submit" value="Submit">
+        <input type="button" value="Cancel" onclick="clearForm()"><br>
+               
+        </form>
+        </div></div>
+        <script src="script.js"></script>
+</body>
+</html>
